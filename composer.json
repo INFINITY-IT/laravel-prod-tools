@@ -1,0 +1,44 @@
+{
+    "name": "infinity-it/laravel-prod-tools",
+    "description": "Laravel Prod Tools",
+    "homepage": "https://github.com/mohamedhk2/laravel-prod-tools",
+    "authors": [
+        {
+            "name": "mohamedhk2",
+            "email": "mohamedhk2@yahoo.fr"
+        }
+    ],
+    "require": {
+        "anhskohbo/no-captcha": "*",
+        "cviebrock/eloquent-sluggable": "*",
+        "diglactic/laravel-breadcrumbs": "*",
+        "ecrmnn/laravel-https": "*",
+        "intervention/image": "*",
+        "jorenvanhocht/laravel-share": "*",
+        "laravel/ui": "*",
+        "mcamara/laravel-localization": "*",
+        "redcenter/laravel-non-www-redirect": "*",
+        "spatie/laravel-medialibrary": "*",
+        "spatie/laravel-translatable": "*"
+    },
+    "license": "MIT",
+    "config": {
+        "sort-packages": true
+    },
+    "conflict": {
+        "buzz/laravel-h-captcha": "*",
+        "mohamedhk2/laravel-prod-tools": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Mohamedhk2\\LaravelProdTools\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Mohamedhk2\\LaravelProdTools\\Providers\\NonWwwRedirectServiceProvider"
+            ]
+        }
+    }
+}
